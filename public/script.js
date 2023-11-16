@@ -13,6 +13,7 @@ var myStream
 navigator.mediaDevices.getUserMedia({audio:true , video:true})
 .then((stream)=>{
     myStream = stream
+    addVideoStream(myvideo , myStream)
 })
 function addVideoStream(video , stream){
     video.srcObject = stream
