@@ -9,7 +9,9 @@ var peer = new Peer(undefined, {
 const user = prompt("Enter your name");
 const myvideo = document.createElement("video")
 myvideo.muted = true
+
 var myStream 
+
 navigator.mediaDevices
 .getUserMedia({audio:true , video:true})
 .then((stream)=>{
