@@ -74,7 +74,7 @@ $(function () {
         if (enabled){
             myStream.getAudioTracks()[0].enabled=false
             html = `<i class="fas fa-microphone-slash"></i>`
-            $("#mute-button").toggleClass("background_red")
+            $("#mute_button").toggleClass("background_red")
             $("#mute_button").html(html)
         }
         else{
