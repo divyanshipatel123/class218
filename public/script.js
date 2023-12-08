@@ -7,10 +7,11 @@ var peer = new Peer(undefined, {
 });
 
 const user = prompt("Enter your name");
+
 const myvideo = document.createElement("video")
 myvideo.muted = true
 
-var myStream 
+let myStream 
 
 navigator.mediaDevices
 .getUserMedia({audio:true , video:true})
@@ -68,7 +69,7 @@ $(function () {
         }
     })
 
-    $("#mute_button"),click(function(){
+    $("#mute_button").click(function(){
         const enabled = myStream.getAudioTracks()[0].enabled
         if (enabled){
             myStream.getAudioTracks()[0].enabled=false
@@ -84,7 +85,7 @@ $(function () {
 
         }
     })
-    $("#stop_video"),click(function(){
+    $("#stop_video").click(function(){
         const enabled = myStream.getVideoTracks()[0].enabled
 
         if (enabled){

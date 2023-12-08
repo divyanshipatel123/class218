@@ -100,22 +100,9 @@
   color: #fff;
 }
 .background_red {
-  background-color: red;
+  background-color: #8d2727;
 }
 
-@media (max-width: 700px) {
-  #show_chat {
-    display: flex;
-  }
-
-  .right_window {
-    display: none;
-  }
-
-  .left_window {
-    display: flex;
-  }
-}
 #video_grid {
   flex-grow: 1;
   display: flex;
@@ -134,4 +121,18 @@ video{
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
+}
+
+@media (max-width: 700px) {
+  #show_chat {
+    display: flex;
+  }
+
+  .right_window {
+    display: none;
+  }
+
+  .left_window {
+    display: flex;
+  }
 }
