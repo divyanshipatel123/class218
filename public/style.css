@@ -99,9 +99,7 @@
   left: 28px;
   color: #fff;
 }
-.background_red {
-  background-color: #8d2727;
-}
+
 
 #video_grid {
   flex-grow: 1;
@@ -122,7 +120,9 @@ video{
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
 }
-
+.background_red {
+  background-color: #8d2727;
+}
 @media (max-width: 700px) {
   #show_chat {
     display: flex;
